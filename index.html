@@ -12,37 +12,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <header>
-        <nav class="w-full flex justify-between lg:justify-around items-center p-3 lg:p-0 bg-[#43ade9]">
-            <a href="#" class="text-4xl font-bold text-white">CodeXDeres</a>
-            <div class="flex items-center m-5 hidden lg:inline-block">
-                <a href="#" class="text-white font-bold mr-12" style="font-size: 18px;">Blog</a>
-                <a href="#" class="text-white font-bold mr-12" style="font-size: 18px;">Programs</a>
-                <a href="#" class="text-white font-bold mr-12" style="font-size: 18px;">Promo</a>
-            </div>
-            <div class="btn-group my-5">
-                <a href="#" class="login rounded-md hover:bg-[#043ade] bg-sky-400 shadow-md text-white font-bold px-10 py-3 hidden lg:inline-block">Daftar Sekarang</a>
-            </div>
-            <button onclick="menuToggle()" class="text-3xl block lg:hidden text-white w-12 h-12"><i class="bi bi-list"></i></button>
-        </nav>
-        <div class="bg-[#43ade9] p-6 flex flex-col hidden lg:hidden animate__animated animate__bounceIn" id="menuMobile">
-            <a href="#" class="text-white font-bold mt-3" style="font-size: 18px;">Blog</a>
-            <a href="#" class="text-white font-bold mt-3" style="font-size: 18px;">Programs</a>
-            <a href="#" class="text-white font-bold mt-3" style="font-size: 18px;">Promo</a>
-            <span class="flex justify-around mt-3">
-                <a href="#" class="rounded-md w-3/5 text-center m-2 bg-[#043ade] shadow-md text-white font-bold px-8 py-2">Daftar Sekarang</a>
-                <a href="#" class="rounded-md w-3/5 text-center m-2 bg-[#17c400] shadow-md text-white font-bold px-8 py-2">Lihat Program</a>
-            </span>
-        </div>
-    </header>
+    <!-- MAIN -->
+    <main class="w-screen h-screen bg-cover no-repeat bg-left lg:bg-center" style="background-image: url(./src/assets/img/model3d/hero-img.PNG);">
+        <h1 class="text-3xl font-bold text-center p-5">Welcome to <span  class="text-[#43ade9]">CodeXDeres</span> Indonesia</h1>
+        <a href="#" class="absolute" style="bottom: 20%; left:8%;">
+            <img width="250" src="./src/assets/img/landing/About.png" alt="About-Me">
+        </a>
+        <a href="#" class="absolute" style="bottom: 20%; left: 50%;">
+            <img width="250" src="./src/assets/img/landing/Article.png" alt="Articles">
+        </a>
+        <a href="#" class="absolute" style="bottom: 1%; left: 8%;">
+            <img width="250" src="./src/assets/img/landing/Course.png" alt="Courses">
+        </a>
+        <a href="#" class="absolute" style="bottom: 1%; left: 50%;">
+            <img width="250" src="./src/assets/img/landing/Service.png" alt="Services">
+        </a>
 
-    <script>
-        function menuToggle() {
-            var element = document.getElementById("menuMobile");
-            element.classList.toggle("hidden");
-        }
-    </script>
-    
+    </main>
+
 </body>
 </html>
